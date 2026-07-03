@@ -34,7 +34,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage className="object-cover" alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -55,16 +55,16 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <WorkSection />
-          </BlurFade>
-        </div>
-      </section>
+      {/*<section id="work">*/}
+      {/*  <div className="flex min-h-0 flex-col gap-y-6">*/}
+      {/*    <BlurFade delay={BLUR_FADE_DELAY * 5}>*/}
+      {/*      <h2 className="text-xl font-bold">Work Experience</h2>*/}
+      {/*    </BlurFade>*/}
+      {/*    <BlurFade delay={BLUR_FADE_DELAY * 6}>*/}
+      {/*      <WorkSection />*/}
+      {/*    </BlurFade>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>

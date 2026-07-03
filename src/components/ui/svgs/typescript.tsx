@@ -14,3 +14,4 @@ const Typescript = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export { Typescript };
+
